@@ -15,6 +15,7 @@
 body{
   min-height: 100vh; 
   min-width: 17.5rem;
+  overflow-x: hidden;
 }
 
 .text-regular{
@@ -464,7 +465,9 @@ a{
 
 /**TABLET**/
 
-@media screen and (min-width: 40.5rem){
+/* @media screen and (min-width: 40.5rem){ */
+@media screen and (min-width: 43.25rem){
+
 
 /*HEADER*/
 

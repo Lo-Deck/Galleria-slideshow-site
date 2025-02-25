@@ -188,11 +188,17 @@ document.querySelectorAll('.button-slide').forEach( (item, i) => {
 
                 //launch video
 
-                clearTime = setTimeout(() => {
-                    document.querySelector('.container-video video').currentTime = 0;
-                    document.querySelector('.container-video video').style.display = 'block';
-                    document.querySelector('.container-video video').play();
-                }, 3000);
+                if(window.innerWidth >= 768){
+
+                    clearTime = setTimeout(() => {
+                        document.querySelector('.container-video video').currentTime = 0;
+                        document.querySelector('.container-video video').style.display = 'block';
+                        document.querySelector('.container-video video').play();
+                    }, 3000);   
+
+                }
+
+
 
         
             }
@@ -215,11 +221,16 @@ document.querySelectorAll('.button-slide').forEach( (item, i) => {
 
 
                 //launch video
-                setTimeout(() => { 
-                    document.querySelector('.container-video video').currentTime = 0;
-                    document.querySelector('.container-video video').style.display = 'block';
-                    document.querySelector('.container-video video').play();
-                }, 3000); 
+
+                if(window.innerWidth >= 768){
+
+                    setTimeout(() => {
+                        document.querySelector('.container-video video').currentTime = 0;
+                        document.querySelector('.container-video video').style.display = 'block';
+                        document.querySelector('.container-video video').play();
+                    }, 3000); 
+
+                }
 
             }
 
@@ -253,15 +264,6 @@ document.querySelectorAll('.button-slide').forEach( (item, i) => {
 
 });
 
-if(animImage){
-
-    console.log(animImage);
-
-    document.querySelector('.container-video video').currentTime = 0;
-    document.querySelector('.container-video video').style.display = 'block';
-    document.querySelector('.container-video video').play();
-
-}
 
 
 window.onload = ( () => {
@@ -271,7 +273,7 @@ window.onload = ( () => {
 
     if(document.querySelector('.slide')  && !param2 ){
 
-        if(!interval && window.innerWidth > 768){
+        if(!interval && window.innerWidth >= 768){
 
             setTimeout(() => {
                 document.querySelector('.container-video video').currentTime = 0;
