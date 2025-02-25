@@ -159,11 +159,9 @@ document.querySelectorAll('.button-slide').forEach( (item, i) => {
 
     item.addEventListener('click', () => {
 
-        console.log('apres : ' + clearTime);
+        // console.log('apres : ' + clearTime);
 
         // clearTimeout(clearTime);
-
-        const time = 3000;
 
         document.querySelector('.container-video video').currentTime = 0;
         document.querySelector('.container-video video').style.display = 'none';
@@ -194,12 +192,9 @@ document.querySelectorAll('.button-slide').forEach( (item, i) => {
                     document.querySelector('.container-video video').currentTime = 0;
                     document.querySelector('.container-video video').style.display = 'block';
                     document.querySelector('.container-video video').play();
-                }, time);
+                }, 3000);
 
-                
-                console.log('avant : ' + clearTime);
-
-
+        
             }
             else if(i === 1 && index < 14){
 
