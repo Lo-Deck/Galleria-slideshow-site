@@ -105,7 +105,7 @@ setTimeout(() => {
 
 ```
 
-And finally, I set AI animated picture by adding `<video>` tag and aline in the JSON file, and use `Pixverse` to generate the different images.
+And finally, I set AI animated picture by adding `<video>` tag and a line in the JSON file, and use `Pixverse` to generate the different images.
 
 ```js
 
